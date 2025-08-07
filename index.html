@@ -1,66 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Privacy Policy</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rush Rent</title>
   <style>
     body {
+      margin: 0;
       font-family: Arial, sans-serif;
-      line-height: 1.6;
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
-      background-color: #f9f9f9;
+      background-color: #f4f4f4;
       color: #333;
     }
-    h1, h2 {
-      color: #0056b3;
-    }
-    footer {
-      margin-top: 40px;
+
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 20px 0;
       text-align: center;
-      font-size: 0.9em;
-      color: #888;
     }
-    a {
-      color: #0056b3;
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
       text-decoration: none;
+      font-weight: bold;
     }
-    a:hover {
-      text-decoration: underline;
+
+    .hero {
+      padding: 60px 20px;
+      text-align: center;
+      background-color: #ffffff;
+    }
+
+    .hero h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.1em;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .cta {
+      margin-top: 30px;
+    }
+
+    .cta a {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #007BFF;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 40px 20px;
+      background-color: #eef1f5;
+    }
+
+    .feature {
+      width: 300px;
+      margin: 20px;
+      background: white;
+      padding: 20px;
+      border-radius: 6px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    .feature h3 {
+      margin-top: 0;
+      color: #003366;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #003366;
+      color: white;
+      margin-top: 40px;
+    }
+
+    footer a {
+      color: #ccc;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 600px) {
+      .features {
+        flex-direction: column;
+        align-items: center;
+      }
     }
   </style>
 </head>
 <body>
 
-  <h1>Privacy Policy</h1>
+  <header>
+    <h1>Rush Rent</h1>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-  <p>Last updated: August 3, 2025</p>
+  <section class="hero">
+    <h2>Fast, Simple, and Reliable Rental Management</h2>
+    <p>Rush Rent makes it easy to manage rentals, track payments, communicate with tenants, and handle everything from your phone. Built for speed and simplicity.</p>
+    <div class="cta">
+      <a href="#">Download the App</a>
+    </div>
+  </section>
 
-  <p>This Privacy Policy explains how we collect, use, and protect your information when you use our website or services.</p>
-
-  <h2>1. Information We Collect</h2>
-  <p>We may collect personal information such as your name, email address, and usage data when you interact with our website.</p>
-
-  <h2>2. How We Use Your Information</h2>
-  <p>We use the information to provide, improve, and personalize our services, and to communicate with you.</p>
-
-  <h2>3. Data Sharing</h2>
-  <p>We do not sell your personal data. We may share data with trusted partners only when necessary to operate our services or comply with legal requirements.</p>
-
-  <h2>4. Cookies</h2>
-  <p>We use cookies to improve your experience. You can disable cookies through your browser settings.</p>
-
-  <h2>5. Your Rights</h2>
-  <p>You have the right to access, correct, or delete your data. Contact us at <a href="mailto:privacy@example.com">privacy@example.com</a> to make a request.</p>
-
-  <h2>6. Changes to This Policy</h2>
-  <p>We may update this Privacy Policy from time to time. Please review this page periodically for changes.</p>
+  <section class="features" id="features">
+    <div class="feature">
+      <h3>Easy Setup</h3>
+      <p>Start listing and managing rentals in minutes. No complicated setup or learning curve.</p>
+    </div>
+    <div class="feature">
+      <h3>Secure Payments</h3>
+      <p>Integrated with Apple Pay and Google Pay for seamless rent collection.</p>
+    </div>
+    <div class="feature">
+      <h3>Smart Notifications</h3>
+      <p>Never miss a due date. Get notified for payments, maintenance, and updates.</p>
+    </div>
+  </section>
 
   <footer>
-    &copy; 2025 Your Company Name. All rights reserved.<br>
-    <a href="mailto:privacy@example.com">privacy@example.com</a>
+    <p>&copy; 2025 Rush Rent</p>
+    <p id="contact">Contact: <a href="mailto:rushrent.app@gmail.com">rushrent.app@gmail.com</a></p>
+    <a href="privacy.html">Privacy Policy</a>
   </footer>
 
 </body>
