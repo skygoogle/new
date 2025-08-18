@@ -2,154 +2,115 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Rush Rent</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
-    }
-
-    header {
-      background-color: #003366;
-      color: white;
-      padding: 20px 0;
-      text-align: center;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
-    }
-
-    nav {
-      margin-top: 10px;
-    }
-
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .hero {
-      padding: 60px 20px;
-      text-align: center;
-      background-color: #ffffff;
-    }
-
-    .hero h2 {
-      font-size: 2em;
-      margin-bottom: 20px;
-    }
-
-    .hero p {
-      font-size: 1.1em;
-      max-width: 700px;
-      margin: auto;
-    }
-
-    .cta {
-      margin-top: 30px;
-    }
-
-    .cta a {
-      display: inline-block;
-      padding: 12px 24px;
-      background-color: #007BFF;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-    }
-
-    .features {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      padding: 40px 20px;
-      background-color: #eef1f5;
-    }
-
-    .feature {
-      width: 300px;
-      margin: 20px;
-      background: white;
-      padding: 20px;
-      border-radius: 6px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
-    }
-
-    .feature h3 {
-      margin-top: 0;
-      color: #003366;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #003366;
-      color: white;
-      margin-top: 40px;
-    }
-
-    footer a {
-      color: #ccc;
-      text-decoration: none;
-      margin: 0 10px;
-      font-size: 0.9em;
-    }
-
-    @media (max-width: 600px) {
-      .features {
-        flex-direction: column;
-        align-items: center;
-      }
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/mia-project-yyqq7u/assets/ngcl73d0zkhb/miatherapy.png">
+  <title>Communitly – Organize Your Groups & Tasks Easily</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
+<body class="bg-gradient-to-br from-blue-900 via-indigo-900 to-gray-900 text-white font-sans">
 
-  <header>
-    <h1>Rush Rent</h1>
-    <nav>
-      <a href="#features">Features</a>
-      <a href="privacy_policy.html">Privacy Policy</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+  <!-- Hero Section -->
+  <section class="min-h-screen flex flex-col justify-center items-center text-center px-4">
 
-  <section class="hero">
-    <h2>Fast, Simple, and Reliable Rental Management</h2>
-    <p>Rush Rent makes it easy to manage rentals, track payments, communicate with tenants, and handle everything from your phone. Built for speed and simplicity.</p>
-    <div class="cta">
-      <a href="#">Download the App</a>
+    <!-- App Icon -->
+    <img src="https://img.icons8.com/fluency/96/groups.png"
+         alt="Communitly Logo"
+         class="w-24 h-24 md:w-32 md:h-32 mb-6" />
+
+    <h1 class="text-5xl font-bold mb-4">Communitly</h1>
+    <p class="text-xl text-gray-300 mb-6 max-w-2xl">
+      Communitly is your all-in-one tool for managing groups and tasks with ease. Whether you're working on a school project, running a team, or keeping things organized with friends, Communitly helps you stay on track.
+    </p>
+
+    <!-- Key Features -->
+    <div class="max-w-2xl text-left text-gray-300 space-y-4 mb-8">
+      <div>✔️ Create your personal profile</div>
+      <div>✔️ Start or join groups</div>
+      <div>✔️ Manage tasks within groups</div>
+      <div>✔️ Set deadlines and keep everyone accountable</div>
+      <div>✔️ Stay connected and productive – all in one place</div>
+      <div>✔️ Simple. Fast. Effective.</div>
+    </div>
+
+    <!-- Action Buttons -->
+    <div class="flex flex-col space-y-4 md:flex-row md:space-y-0 md:space-x-4">
+      <a href="/privacy_policy.html" class="px-6 py-2 bg-blue-600 hover:bg-blue-700 rounded-full transition text-center">Privacy Policy</a>
+      <a href="/termscondition.html" class="px-6 py-2 bg-gray-700 hover:bg-gray-800 rounded-full transition text-center">Terms of Use</a>
     </div>
   </section>
 
-  <section class="features" id="features">
-    <div class="feature">
-      <h3>Easy Setup</h3>
-      <p>Start listing and managing rentals in minutes. No complicated setup or learning curve.</p>
-    </div>
-    <div class="feature">
-      <h3>Secure Payments</h3>
-      <p>Integrated with Apple Pay and Google Pay for seamless rent collection.</p>
-    </div>
-    <div class="feature">
-      <h3>Smart Notifications</h3>
-      <p>Never miss a due date. Get notified for payments, maintenance, and updates.</p>
+  <!-- Why Section -->
+  <section class="bg-gray-800 py-12 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-white mb-6">Stay Organized, Together – with Communitly!</h2>
+      <p class="text-gray-300 mb-8">
+        Communitly is a fresh way to grow, connect, and accomplish your goals. Whether you’re looking to start a blog, get fit, manage finances, or just meet like-minded people—you’ll find support inside focused micro-groups of 5–10 people.
+      </p>
+      <h3 class="text-2xl font-semibold mb-4">🎯 Why Communitly?</h3>
+      <div class="text-gray-300 space-y-3 text-left max-w-2xl mx-auto">
+        <div>✔️ Small – 5 to 10 members max</div>
+        <div>✔️ Purposeful – Goal-focused and time-limited (30 days)</div>
+        <div>✔️ Supportive – Chat, track tasks, and cheer each other on</div>
+      </div>
     </div>
   </section>
 
-  <footer>
-    <p>&copy; 2025 Rush Rent</p>
-    <p id="contact">Contact: <a href="mailto:rushrent.app@gmail.com">rushrent.app@gmail.com</a></p>
-    <a href="privacy.html">Privacy Policy</a>
+  <!-- Core Features Section -->
+  <section class="bg-indigo-900 py-12 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-white mb-6">🔑 Core Features</h2>
+      <div class="text-gray-300 text-left space-y-4 max-w-2xl mx-auto">
+        <div>✅ Create or Join Micro-Groups – Set your goal and team up with others on the same mission.</div>
+        <div>✅ 30-Day Challenge Structure – Enough time to make real progress without burnout.</div>
+        <div>✅ Real-Time Group Chat – Stay connected, share wins, and support each other daily.</div>
+        <div>✅ Simple Matchmaking – We’ll suggest groups that align with your goals or interests.</div>
+        <div>✅ Task Tracking – Set and monitor progress with accountability tools.</div>
+        <div>✅ Personalized Profile – Highlight your goals, skills, and progress.</div>
+        <div>✅ Freemium Model – Free: Join 1 group. Pro ($5/month): Unlimited groups + smarter matching.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Use Cases Section -->
+  <section class="bg-gray-900 py-12 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-white mb-6">🌱 Use Communitly To:</h2>
+      <div class="text-gray-300 space-y-3 max-w-2xl mx-auto text-left">
+        <div>✔️ Start a side hustle or blog</div>
+        <div>✔️ Improve fitness habits</div>
+        <div>✔️ Build emotional resilience</div>
+        <div>✔️ Tackle debt or budgeting goals</div>
+        <div>✔️ Learn new skills or explore hobbies</div>
+        <div>✔️ Stay motivated with like-minded people</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Us Section -->
+  <section class="bg-gray-800 py-12 px-4">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-white mb-4">Need Help? Get in Touch</h2>
+      <p class="text-gray-300 mb-6">
+        Have questions, feedback, or need support? We're here for you 24/7.
+      </p>
+      <p class="text-gray-300 mb-6">
+        📧 Email us at
+        <a href="mailto:admin@communitly.app" class="text-blue-400 hover:underline">admin@communitly.app</a>
+      </p>
+      <a href="mailto:admin@communitly.app"
+         class="inline-block px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-full text-white font-semibold transition">
+        Contact Support
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 text-gray-500 text-sm">
+    &copy; <span id="year"></span> Communitly. All rights reserved.
   </footer>
 
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
